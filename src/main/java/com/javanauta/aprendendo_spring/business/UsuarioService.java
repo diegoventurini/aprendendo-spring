@@ -54,6 +54,7 @@ public class UsuarioService {
                 () -> new ResourceNotFoundException("Email não foi encontrado " + email));
     }
 
+    // Deleta usuario por email
     public void deletarUsuarioPorEmail(String email) {
         usuarioRepository.deleteByEmail(email);
     }
